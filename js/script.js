@@ -1,13 +1,21 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors;
+let argButtonName, buttonPaper, buttonRock, buttonScissors;
 
 buttonRock = document.getElementById("button-rock");
 buttonPaper = document.getElementById("button-paper");
 buttonScissors = document.getElementById("button-scissors");
 
+let argMoveId,
+    argPlayerMove,
+    argComputerMove,
+    computerMove,
+    playerMove,
+    randomNumber,
+    playerInput; 
+
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + " został kliknięty");
-  var computerMove, randomNumber;
+  let computerMove, randomNumber;
   randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log("wylosowana liczba to: " + randomNumber);
   if (randomNumber == "1") {
@@ -18,13 +26,7 @@ function buttonClicked(argButtonName) {
     computerMove = "nożyce";
   }
 
-  var argMoveId,
-    argPlayerMove,
-    argComputerMove,
-    computerMove,
-    playerMove,
-    randomNumber,
-    playerInput;
+  
 
   /**
    * Describe this function...
