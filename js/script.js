@@ -7,9 +7,7 @@ buttonScissors = document.getElementById("button-scissors");
 let argMoveId,
     argPlayerMove,
     argComputerMove,
-    computerMove,
     playerMove,
-    randomNumber,
     playerInput; 
 
 function buttonClicked(argButtonName) {
