@@ -4,10 +4,7 @@ buttonRock = document.getElementById("button-rock");
 buttonPaper = document.getElementById("button-paper");
 buttonScissors = document.getElementById("button-scissors");
 
-let 
-argButtonName,
-    argComputerMove,
-    playerMove;
+let argButtonName, argComputerMove, playerMove;
     
 
 function buttonClicked(argButtonName) {
