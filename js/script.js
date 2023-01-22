@@ -1,8 +1,6 @@
-let  buttonPaper, buttonRock, buttonScissors;
-
-buttonRock = document.getElementById("button-rock");
-buttonPaper = document.getElementById("button-paper");
-buttonScissors = document.getElementById("button-scissors");
+const  buttonPaper = document.getElementById("button-paper");
+const buttonRock = document.getElementById("button-rock");
+const buttonScissors = document.getElementById("button-scissors");
 
 let argButtonName, argComputerMove, playerMove;
     
@@ -10,8 +8,10 @@ let argButtonName, argComputerMove, playerMove;
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + " został kliknięty");
-  let computerMove, randomNumber;
-  randomNumber = Math.floor(Math.random() * 3 + 1);
+
+  let computerMove;
+  let randomNumber = Math.floor(Math.random() * 3 + 1);
+
   console.log("wylosowana liczba to: " + randomNumber);
   if (randomNumber == "1") {
     computerMove = "kamień";
@@ -49,6 +49,7 @@ function buttonClicked(argButtonName) {
 let playerMove, playerInput;
 
   function displayResult(argPlayerMove, argComputerMove) {
+    
     console.log(
       "wywołano funkcję displayResults z argumentami: " +
         argPlayerMove +
